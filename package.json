@@ -1,0 +1,17 @@
+{
+  "name": "cs445-ci-demo",
+  "version": "1.0.0",
+  "description": "CS445 CI/CD demo: Jest tests run by GitHub Actions on every push and pull request",
+  "scripts": {
+    "test": "jest --ci --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": ["validators.js", "lms.js"],
+    "coverageThreshold": {
+      "global": { "branches": 80, "lines": 80 }
+    }
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

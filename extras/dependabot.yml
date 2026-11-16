@@ -1,0 +1,7 @@
+# Step 6: copy this file to .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"

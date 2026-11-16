@@ -1,0 +1,2 @@
+# Step 6: add this as the last step in .github/workflows/test.yml
+      - run: npm audit --audit-level=high
